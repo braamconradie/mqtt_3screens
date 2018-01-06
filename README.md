@@ -1,12 +1,12 @@
 # mqtt_3screens
 
-I have been playing with MQTT (Message Queuing Telemetry Transport) for a while. I have finally been making modest success to get it to work. 
+I have been playing with MQTT (Message Queuing Telemetry Transport) for a while. I have finally been making modest progress to get it to work. 
 
 So... this is an experiment with Javascript client files that sends a ball (circle) travelling across three independent computers' screens. Also combined this with ESP32 code that listens for mqtt signals. When the ball reaches the edge of left hand screen a 240V device (a light in this case) is switched on and when the ball reaches the right edge it is swithched off.
 
 Click the link https://www.youtube.com/watch?v=GB6GTJho6RU to see a 30sec video on youtube on what the finished prototype looks like.
 
-Three separate clients have simple html/javascript files that hook up to MQTT. Then a fourth client runs a simple js/html files that act as the controller, simply running a nested for loop that sends out x co-ordinates from 0 to 1800. Client 1 shows the circle if it is between 0 and 600, the second client if between 600 and 1200 and the third client if between 1200 and 1800. You will see that I also threw in an ipad for fun, running the 2nd client file alongside the pc behind it (both running the same files). The third client was run off a raspberry pi.
+Three separate clients have simple html/javascript files that hook up to MQTT. Then a fourth client runs a simple js/html files that act as the controller, simply running a nested for loop that sends out x co-ordinates from 0 to 1800. Client 1 shows the circle if it is between 0 and 600, the second client if between 600 and 1200 and the third client if between 1200 and 1800. You will see that I also threw in an ipad for fun, running the 2nd client file alongside the pc behind it (both running the same files for the second client/screen). The third client was run off a raspberry pi.
 
 Then, to road test the MQTT capability, I hooked up an ESP32 chip (the successor to the ESP8266) to a relay. I cut a powercord in half and wired in the relay on the live phase (PLEASE DO NOT DO THIS IF YOU ARE NOT FAMILIAR WITH WORKING AT HIGH VOLTAGES, IN THIS CASE 240V). 
 
