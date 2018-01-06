@@ -18,8 +18,8 @@ var koord;
   client.onMessageArrived = onMessageArrived;
   var options = {
     useSSL: true,
-    userName: "yyqzwwpb",
-    password: "UHDKx2H5Jmp_",
+    userName: "xxxxxxx", // put own credentials in
+    password: "xxxxxxxx",
     onSuccess:onConnect,
     onFailure:doFail
   }
