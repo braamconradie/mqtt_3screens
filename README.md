@@ -23,6 +23,8 @@ There are several comments to make here:
 
 •	I only included the Screen1 html file above. For Screen 2, Screen 3 and for the Controller.js file you can use exactly the same Screen1.html file (but obviously just change the reference to the relevant javascript file) 
 
+•	Remember to change your credentials. I recommend that you use CloudMQTT (I have zero association with them and all of this and much more can be done on a free account) as the code is already set up for this. The other reason is that I like using glitch.com (another free resource) but they only run on https. It took a bit off effort to figure out how to set this up!!! 
+
 Here is a simple diagram. The code is 
 
 
