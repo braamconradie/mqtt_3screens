@@ -25,6 +25,10 @@ There are several comments to make here:
 
 •	Remember to change your credentials. I recommend that you use CloudMQTT (I have zero association with them and all of this and much more can be done on a free account) as the code is already set up for this. The other reason is that I like using glitch.com (another free resource) but they only run on https. It took a bit off effort to figure out how to set this up!!! 
 
-Here is a simple diagram. The code is 
+•	You can obviously ignore the ESP32/light/relay thing completely, the rest works independently.
+
+•	I used a stock standard ESP32 chip (<$10) and also a standard OMRON G5LE-14 5V DC , 250VAC relay.
+
+Here is a simple diagram. 
 
 
