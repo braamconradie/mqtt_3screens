@@ -14,9 +14,15 @@ There is no server side code required to do this project.
 
 There are several comments to make here:
 •	Node/Socket.io could probably do a better job on the screens, but in order to communicate to an external chip with minimal computation ability you need mqtt, which shines in such situations (low footprint).
+
 •	It is very stable with the example code which runs 20 cycles across the three screens. When you go much more that that it loses the plot. This must be due to shoddy code and nothing to do with MQTT (I stress tested mqtt by running about 600 messages a second between two raspberry pis over several days – this added up to several billions of messages (yes, the one with nine zeroes…) and it was rock solid over the entire period (I used python in that case).
+
 •	I also know that something is not optimal about my code because the controller runs through the 20 iterions in a flash, but then the 3 clients take ages to complete their thing. It is almost as if it goes into a buffer state (this may be a clue as to why it loses the plot when you put too much volume into the mix)
+
 •	I was lazy and did not work neatly with each separate screen size, I simply manually expanded the screens to look OK (lazy).
+
+•	I only included the Screen1 html file above. For Screen 2, Screen 3 and for the Controller.js file you can use exactly the same Screen1.html file (but obviously just change the reference to the relevant javascript file) 
+
 Here is a simple diagram. The code is 
 
 
