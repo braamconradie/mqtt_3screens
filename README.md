@@ -29,6 +29,9 @@ There are several comments to make here:
 
 •	I used a stock standard ESP32 chip (<$10) and also a standard OMRON G5LE-14 5V DC , 250VAC relay.
 
-Here is a simple diagram. 
+•	A flowchart included in files of variouos components.
+
+
+
 
 
