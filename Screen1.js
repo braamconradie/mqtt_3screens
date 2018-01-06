@@ -19,8 +19,8 @@ var client;
   client.onMessageArrived = onMessageArrived;
   var options = {
     useSSL: true,
-    userName: "yyqzwwpb",
-    password: "UHDKx2H5Jmp_",
+    userName: "XXXXXX", //put own credentials in here
+    password: "XXXXXX",
     onSuccess:onConnect,
     onFailure:doFail
   }
